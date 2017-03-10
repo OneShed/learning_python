@@ -49,7 +49,7 @@ def subd(path, *subdirs):
 # Variable params
 def variable_params(*args):
     for key, value in enumerate(args):
-        print(("{0}. {1}").format(key, value))
+        print(("Variable params: {0}. {1}").format(key, value))
 
 variable_params( 1, 2, 3, 6 )
 
@@ -154,16 +154,21 @@ polefci = [ f('nic'), f('neco') ]
 polefci[1]
 
 import tarfile
-f = open('N:\\t.txt', 'w')
-f.write('text\n')
-f.write('text2')
+file='N:\\t.txt'
+if os.path.isfile(file):
+    f = open('N:\\t.txt', 'w')
+    f.write('text\n')
+    f.write('text2')
 
-f = open('N:\\t.txt', 'r')
-for fl in f:
-    fl = fl.replace('\n', '')
-    print("linka: %s" % fl)
+    f = open('N:\\t.txt', 'r')
+    for fl in f:
+        fl = fl.replace('\n', '')
+        print("linka: %s" % fl)
+else:
+    print( "File %s ain't exist" % file)
 
 pole = [1, 3, 4, 6, 3, 3, 8]
+pole.insert(2,22)
 print(pole.index(3))
 
 hash={}
@@ -189,5 +194,7 @@ for i in pole:
     if( breaker == True):
         break
 print( "stesp: %s" % steps)
+
+
 
 
