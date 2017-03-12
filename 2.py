@@ -137,3 +137,21 @@ pickle.dump(pole, open("polep", "wb"))
 # read it
 pickled = pickle.load(open("polep", "rb"))
 print(pickled)
+
+aa =4
+
+def d():
+    df = 3
+    nonlocal(df)
+    print(aa)
+
+d()
+print(df)
+# CLOSURES
+def counter():
+    n = 0
+    def count():
+        nonlocal n
+        n += 1
+        return n
+    return count
