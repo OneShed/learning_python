@@ -155,6 +155,7 @@ polefci[1]
 
 import tarfile
 file='N:\\t.txt'
+
 if os.path.isfile(file):
     f = open('N:\\t.txt', 'w')
     f.write('text\n')
