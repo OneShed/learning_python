@@ -41,4 +41,11 @@ import sys
 import os
 print(os.path.abspath(os.path.dirname(sys.argv[0])))
 
+a=1
 
+if a==1:
+    print('je 1')
+
+if hostname != None:
+    print('ups')
+    print(hostname)

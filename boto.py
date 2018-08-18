@@ -1,6 +1,9 @@
 #!/usr/bin/env python
 
+<<<<<<< HEAD
 import sys
+=======
+>>>>>>> 66a866460bc028a4ea571a4768039789dffcbb14
 import boto3
 from pprint import pprint
 from botocore.exceptions import ClientError
