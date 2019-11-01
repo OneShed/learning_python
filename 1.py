@@ -196,6 +196,35 @@ for i in pole:
         break
 print( "stesp: %s" % steps)
 
+print("{}".format(sys.path))
 
+hash = {1:'foo', 2:'bar'}
+
+import random
+
+for i in [1,2,3]:
+    print(i)
+    if( i == 2):
+        break
+else:
+    print('out')
+
+first=[1,2,3]
+second=['a','b','c','d']
+
+# enumerate, zip
+# insert, remove
+# tuples are immutable
+# setdefault (in dictionary)
+
+
+for a,b in zip(first,second):
+    print("{} {}".format(a,b))
+
+foo='tsil'
+bar=list(foo)
+
+for b in bar:
+    print(b)
 
 

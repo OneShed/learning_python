@@ -1,14 +1,12 @@
 #!/usr/bin/env python
 
-<<<<<<< HEAD
-import sys
-=======
->>>>>>> 66a866460bc028a4ea571a4768039789dffcbb14
 import boto3
 from pprint import pprint
 from botocore.exceptions import ClientError
 
-ids = ['i-02889f94b07c5b535']
+#ids = ['i-02889f94b07c5b535']
+#ids = ['i-07be939cfbc37e1a6']
+ids = ['i-0f6b24a4c95fd1bb3']
 
 ec2b = boto3.client('ec2')
 response = ec2b.describe_instances()
@@ -56,5 +54,5 @@ def stop_instances(ids):
     ec2b.stop_instances(InstanceIds=ids, DryRun=False)
 
 #start_instances(ids)
-#stop_instances(ids)
+stop_instances(ids)
 describe_ec2_simple()
