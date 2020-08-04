@@ -3,7 +3,7 @@ pole = (2, 4, 5, 6, 3,3)
 
 pole2=[]
 
-uniqe = [ i for i in pole if i not in pole2 pole2.insert(0,i)]
+uniqe = [ i for i in pole if i not in pole2 and (pole2.insert(0,i) or True)]
 print(uniqe)
 
 sys.exit(0)
