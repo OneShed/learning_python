@@ -8,4 +8,7 @@ print(max(set(test), key = test.count))
 # unpacking list of variable length
 *trailing, lsst_one = [10, 8, 7, 1, 9, 5, 10, 3]
 
+>>> 'Hello'.center(20, '=')
+'=======Hello========'
+
 
